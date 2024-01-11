@@ -53,7 +53,7 @@ php-apache   Deployment/php-apache   0%/50%    1         5         1          27
 
 Here our condition is : If CPU goes beyond 50% utilization then its should increase it replicas and if CPU is below 50% then decrease the replicas, max replicas count should be 5 and minimum replica count should be 1.
 
-5. Its time for testing our HPA, will try to genrate load on our php app
+5. Its time for testing our HPA, will try to generate load on our php app
 
 ### Increase the load
 #### Run this in a separate terminal
@@ -84,4 +84,4 @@ php-apache   4/1     4            4           12m
 php-apache   1/1     1            1           12m
 ```
 
-from the above output we can see that when we genrates load, pod count(replicas) increases autmatically and when load is decrease the pod count(replicas) also decreasese.
+from the above output we can see that when we generates load, pod count(replicas) increases autmatically and when load is decrease the pod count(replicas) also decreasese.
